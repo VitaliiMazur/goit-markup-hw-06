@@ -854,9 +854,26 @@ body {
   margin-top: 4px;
   padding: 12px 30px;
   outline: none;
+  transition: border-color var(--hover-duration) var(--hover-time-function);
 
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
+}
+
+.modal-input:focus {
+  border-color: var(--acent-color);
+}
+
+.modal-input:hover {
+  border-color: var(--acent-color);
+}
+
+.modal-input:focus + .input-icon {
+  fill: var(--acent-color);
+}
+
+.modal-input:hover + .input-icon {
+  fill: var(--acent-color);
 }
 
 .modal-input-wrap {
@@ -868,11 +885,7 @@ body {
   left: 12px;
   top: 50%;
   transform: translateY(-50%);
-}
-
-.modal-input:focus {
-  border: 1px solid var(--acent-color);
-  outline: none;
+  transition: fill var(--hover-duration) var(--hover-time-function);
 }
 
 .modal-btn {
