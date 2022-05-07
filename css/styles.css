@@ -852,7 +852,7 @@ body {
   left: 576px;
   top: 314px;
   margin-top: 4px;
-  padding: 12px 30px;
+  padding: 12px 35px;
   outline: none;
   transition: border-color var(--hover-duration) var(--hover-time-function);
 
@@ -889,10 +889,33 @@ body {
 }
 
 .modal-btn {
+  outline: none;
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
   min-width: 200px;
-  min-height: 50px;
-  left: 700px;
-  top: 712px;
+  height: 50px;
+  padding: 10px 55px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+
+  letter-spacing: 0.06em;
+  border-radius: 4px;
+  margin-left: auto;
+  margin-right: auto;
+  border: none;
+
+  color: var(--primary-bg-color);
+  background-color: var(--acent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  transition: color var(--hover-duration) var(--hover-time-function),
+  background-color var(--hover-duration) var(--hover-time-function) ;
+}
+
+.modal-btn:hover,
+.modal-btn:focus {
+  background-color: var(--bgc--hoverfocus-btnservice-color);
 }
 
 .modal-label {
@@ -913,6 +936,7 @@ body {
   margin-bottom: 20px;
   margin-top: 4px;
   padding: 12px 16px;
+  
 
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
@@ -920,4 +944,49 @@ body {
 .modal-comment:focus {
   border: 1px solid var(--acent-color);
   outline: none;
+}
+
+.policy-span {
+  color: var(--acent-color);
+}
+
+.check-text {
+  position: relative;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+
+  color: var(--primary-text-color);
+}
+
+.check-text::before {
+  content: "";
+  width: 16px;
+  height: 15px;
+  border: 2px solid var(--title-text-color);
+  border-radius: 3px;
+  margin-right: 8px;
+}
+
+.input-check:checked + .check-text::before {
+  background-color: var(--acent-color);
+  border: none;
+  background-image: url(../img2/checkbox-icon.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.input-check {
+  display: block;
+  align-items: center;
+}
+
+.checkbox-icon {
+  position: absolute;
+  transform: translateY(-120%);
+  
+
+  fill: var(--primary-bg-color);
 }

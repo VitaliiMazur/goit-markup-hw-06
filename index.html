@@ -453,19 +453,27 @@
            <use href="./img2/symbol-defs.svg#icon-email-black-18dp-1"></use>
          </svg>
         </div>
-        
+
       </div>
+
+      
+
+
         <label class="modal-label"
             >Комментарий
             <textarea name="user-text" placeholder="Введите текст" class="modal-comment"></textarea>
           </label>
-          <!-- <fieldset>
-            <legend>Соглашаюсь с рассылкой и принимаю Условия договора
-              <label for="big">big
-                <input type="radio" id="big" name="">
-              </label>
-            </legend>
-          </fieldset> -->
+
+          <div class="modal-field">
+            <input type="checkbox" class="input-check is-hidden"
+             id="input-check" name="policy"
+             value="policy">
+             
+            <label for="input-check" class="check-text">Соглашаюсь с рассылкой и принимаю&nbsp;<span class="policy-span">Условия договора</span></label>
+             
+            
+          </div>
+         
          <button type="submit" class="modal-btn">Отправить</button>
         </form>
         
