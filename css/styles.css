@@ -776,6 +776,64 @@ body {
   fill: var(--primary-bg-color);
 }
 
+.input-button {
+  margin-left: 93px;
+  position: relative;
+}
+.email-text {
+  outline: none;
+  position: absolute;
+  min-width: 358px;
+  height: 50px;
+  padding-left: 16px;
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background-color: var(--footer-bgc-color);
+}
+.sucscribe-text {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.16;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+
+  color: var(--primary-bg-color);
+}
+
+.sucscribe-button {
+  position: absolute;
+  width: 200px;
+  height: 50px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  letter-spacing: 0.06em;
+
+  color: var(--primary-bg-color);
+  background-color: var(--acent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: none;
+  transform: translateX(185%);
+  transition: background-color var(--hover-duration) var(--hover-time-function);
+}
+
+.sucscribe-button:hover,
+.sucscribe-button:focus {
+  background-color: var(--bgc--hoverfocus-btnservice-color);
+}
+.button-icon {
+  margin-left: 10px;
+}
+
 /* --------------------------------Модальне вікно------------------- */
 
 .backdrop {
