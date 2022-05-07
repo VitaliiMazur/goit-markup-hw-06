@@ -776,10 +776,14 @@ body {
   fill: var(--primary-bg-color);
 }
 
+
+
 .input-button {
   margin-left: 93px;
   position: relative;
 }
+
+
 .email-text {
   outline: none;
   position: absolute;
@@ -822,9 +826,11 @@ body {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   border: none;
-  transform: translateX(185%);
+  margin-left: 12px;
+  transform: translateX(179%);
   transition: background-color var(--hover-duration) var(--hover-time-function);
 }
+
 
 .sucscribe-button:hover,
 .sucscribe-button:focus {
@@ -1018,6 +1024,7 @@ body {
   letter-spacing: 0.03em;
 
   color: var(--primary-text-color);
+  
 }
 
 .check-text::before {
@@ -1035,6 +1042,7 @@ body {
   background-image: url(../img2/checkbox-icon.svg);
   background-repeat: no-repeat;
   background-position: center;
+  
 }
 
 .input-check {
