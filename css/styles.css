@@ -776,6 +776,9 @@ body {
   fill: var(--primary-bg-color);
 }
 
+
+
+
 .email-text {
   display: inline-flex;
   outline: none;
@@ -788,6 +791,14 @@ body {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   background-color: var(--footer-bgc-color);
+}
+
+.email-text::placeholder,
+.email-text:focus-visible {
+  font-size: 16px;
+  line-height: 1.25;
+  align-items: center;
+  color: rgba(255, 255, 255, 0.6);
 }
 .sucscribe-text {
   font-weight: 700;
@@ -869,9 +880,7 @@ body {
 .close-btn-icon:hover {
   fill: var(--acent-color);
 }
-/* .close-btn-icon:focus {
-  fill: var(--acent-color);
-} */
+
 .modal-close-btn {
   position: absolute;
   top: 8px;
