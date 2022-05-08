@@ -192,6 +192,8 @@ body {
   line-height: 1.14;
   letter-spacing: 0.02em;
   transition: color var(--hover-duration) var(--hover-time-function);
+  padding-top: 32px;
+  padding-bottom: 32px;
 
   color: var(--primary-text-color);
 }
@@ -205,6 +207,8 @@ body {
   line-height: 1.14;
   letter-spacing: 0.02em;
   transition: color var(--hover-duration) var(--hover-time-function);
+  padding-top: 32px;
+  padding-bottom: 32px;
 
   color: var(--primary-text-color);
 }
@@ -227,7 +231,7 @@ body {
   margin-right: 10px;
 
   fill: var(--primary-text-color);
-  transition: fill var(--hover-duration) var(--hover-time-function);
+  transition: color var(--hover-duration) var(--hover-time-function);
 }
 
 .email:hover .header-icon {
@@ -626,9 +630,14 @@ body {
   align-items: center;
   border: 1px solid var(--team-soc-icon-color);
   border-radius: 4px;
-  transition: fill var(--hover-duration) var(--hover-time-function);
+  transition: fill var(--hover-duration) var(--hover-time-function),
+    border var(--hover-duration) var(--hover-time-function);
 
   fill: var(--team-soc-icon-color);
+}
+
+.clients-icon {
+  transition: fill var(--hover-duration) var(--hover-time-function);
 }
 
 .client-item + .client-item {
