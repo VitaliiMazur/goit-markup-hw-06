@@ -874,10 +874,6 @@ body {
   transition: fill var(--hover-duration) var(--hover-time-function);
 }
 
-.close-btn-icon:hover {
-  fill: var(--acent-color);
-}
-
 .modal-close-btn {
   position: absolute;
   top: 8px;
@@ -891,6 +887,10 @@ body {
   align-items: center;
   justify-content: center;
   background-color: var(--primary-bg-color);
+}
+
+.modal-close-btn:hover .close-btn-icon {
+  fill: var(--acent-color);
 }
 
 .is-hidden {
