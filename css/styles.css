@@ -231,7 +231,7 @@ body {
   margin-right: 10px;
 
   fill: var(--primary-text-color);
-  transition: color var(--hover-duration) var(--hover-time-function);
+  transition: fill var(--hover-duration) var(--hover-time-function);
 }
 
 .email:hover .header-icon {
